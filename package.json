@@ -1,0 +1,31 @@
+{
+  "name": "zenx-lb",
+  "version": "0.0.1",
+  "description": "A tiny http(s)/ws(s) load balancer.",
+  "icon": "http://tournouatichu.com/logolight.png",
+  "license": "MIT",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raelgor/zenx-lb.git"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "http-proxy": "^1.12.0",
+    "mini-cache": "0.0.3",
+    "ws": "^1.0.1"
+  },
+  "scripts": {
+    "test": "mocha --es_staging"
+  },
+  "author": {
+    "name": "Kosmas Papadatos",
+    "email": "kosmas.papadatos@gmail.com",
+    "url": "https://plus.google.com/+KosmasPapadatos"
+  },
+  "devDependencies": {
+    "co": "^4.6.0",
+    "mocha": "^2.3.4",
+    "ws": "^1.0.1"
+  }
+}
