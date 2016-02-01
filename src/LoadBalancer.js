@@ -14,6 +14,13 @@ class LoadBalancer {
         this._config.targetGroups = this._config.targetGroups || [];
         this._config.rules = this._config.rules || [];
         
+        // Make sure certificates are strings
+        if(this._config.ssl)
+            for(let key of ['cert', 'key', 'ca'])
+                this._config.ssl[key] = 
+                   typeof this._config.ssl[key] === 'object' ? 
+                   this._config.ssl[key].toString('utf8') : this._config.ssl[key];
+        
         emitter.call(this);
         
         if(isNaN(this._config.numOfClusters))
