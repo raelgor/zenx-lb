@@ -179,6 +179,7 @@ class LoadBalancer {
     close() {
         for(let worker of this.cluster.workers)
             worker.kill('SIGTERM');
+        this.emit('close');
     }
     
 }
