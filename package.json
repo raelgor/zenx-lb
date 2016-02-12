@@ -1,6 +1,6 @@
 {
   "name": "zenx-lb",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A tiny http(s)/ws(s) load balancer.",
   "icon": "http://tournouatichu.com/logolight.png",
   "license": "MIT",

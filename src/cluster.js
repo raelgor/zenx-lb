@@ -5,6 +5,8 @@ const https = require('https');
 const Rule = require('./Rule');
 const TargetGroup = require('./TargetGroup');
 
+process.title = 'zenx-lb-c';
+
 const command = {
     
     // Takes in a configuration object
